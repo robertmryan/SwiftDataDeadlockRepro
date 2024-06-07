@@ -12,7 +12,7 @@ struct ItemsView: View {
     @Query(
         {
             var descriptor = FetchDescriptor<Item>(
-                sortBy: [.init(\.id)]
+                sortBy: [.init(\.itemId)]
             )
             descriptor.fetchLimit = 100
             return descriptor

@@ -10,11 +10,11 @@ import SwiftData
 
 @Model
 final class Item {
-    var id: String
+    var itemId: String
     var str: String
 
-    init(_ id: String) {
-        self.id = id
+    init(_ itemId: String) {
+        self.itemId = itemId
 
         let memoryFootprintKB = 5
         str = String(repeating: "0", count: 1024 * memoryFootprintKB)

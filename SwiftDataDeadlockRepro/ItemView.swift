@@ -13,7 +13,7 @@ struct ItemView: View {
     var body: some View {
         VStack {
             VStack {
-                Text(String(item.id))
+                Text(item.itemId)
                     .padding()
                 Text(item.str)
                     .font(.caption)
